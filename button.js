@@ -15,7 +15,7 @@ function createRipple(event) {
     button.appendChild(circle);
 }
 
-addEventListener("load", () => {
+addEventListener("DOMContentLoaded", () => {
     const buttons = document.getElementsByClassName("ripple-button");
     for (const button of buttons) {
         button.addEventListener("click", createRipple);
